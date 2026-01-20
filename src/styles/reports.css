@@ -1,0 +1,121 @@
+/* reports.css */
+
+/* Container */
+.forecast-alerts {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Table */
+.forecast-alerts table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.forecast-alerts th,
+.forecast-alerts td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.forecast-alerts th {
+  background-color: #6c5ce7;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px 8px 0 0;
+}
+
+.forecast-alerts tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Input & Buttons */
+.forecast-alerts input[type="number"] {
+  width: 70px;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-right: 8px;
+  text-align: center;
+}
+
+.forecast-alerts button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.forecast-alerts button:hover {
+  opacity: 0.85;
+}
+
+/* Update button */
+.forecast-alerts button:nth-of-type(1) {
+  background-color: #00b894;
+  color: white;
+}
+
+/* Reorder button */
+.order-btn {
+  background-color: #d63031;
+  color: white;
+  margin-left: 5px;
+}
+
+/* Toast Notifications */
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.toast {
+  background-color: #ffeaa7;
+  color: #2d3436;
+  padding: 12px 18px;
+  margin-bottom: 10px;
+  border-left: 5px solid #fd79a8;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  font-weight: 500;
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Forecast messages */
+.forecast-alerts td .warning-msg {
+  color: #d63031;
+  font-weight: 600;
+}
+
+.forecast-alerts td .ok-msg {
+  color: #00b894;
+  font-weight: 600;
+}
+.low-stock {
+  background-color: #fff3cd; /* light yellow */
+}
+
+.out-of-stock {
+  background-color: #f8d7da; /* light red */
+}

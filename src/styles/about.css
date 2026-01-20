@@ -1,0 +1,117 @@
+/* about.css */
+
+/* General Container */
+.about-container {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+/* Hero Section */
+.about-hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+/* Feature Cards */
+.feature-card {
+  transition: 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.feature-card img {
+  border-bottom: 1px solid #eee;
+}
+
+.feature-title {
+  color: #3f51b5;
+  font-weight: bold;
+}
+
+.feature-desc {
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Features Section */
+.about-features {
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+}
+
+/* Call to Action Section */
+.about-cta {
+  padding: 60px 20px;
+  background-color: #3f51b5;
+  color: white;
+  text-align: center;
+}
+
+.about-cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.about-cta button {
+  font-size: 1rem;
+  padding: 12px 30px;
+}
+
+/* Footer */
+.about-footer {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.about-footer a:hover {
+  color: #3f51b5;
+}
+
+.about-footer svg {
+  vertical-align: middle;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.about-footer svg:hover {
+  color: #3f51b5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 960px) {
+  .feature-card img {
+    height: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-hero p {
+    font-size: 1.2rem;
+  }
+}
